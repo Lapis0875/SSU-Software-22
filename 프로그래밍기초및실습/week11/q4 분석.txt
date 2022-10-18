@@ -1,0 +1,19 @@
+int main(void)
+{   . . . ①
+    int a, b, c;
+    printf();  // ①
+    {   . . . ②
+        int b, c;
+        printf();  // ②
+        {   . . . ③
+            int c;
+            printf();  // ③
+        }
+        printf();  // ②
+        {   . . . ④
+            printf();  // ④
+        }
+        printf();  // ②
+    }
+    printf();  // ①
+}
